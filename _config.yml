@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Mateclece个人博客
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Mateclece
+language: zn-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://mateclece.github.io/project
+url: https://mateclece.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,4 +101,7 @@ theme: aero
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Mateclece/Mateclece.github.io.git
+  branch: main  # 或 master，取决于你的 GitHub 仓库默认分支
+  message: 'Site updated: {{now("YYYY-MM-DD HH:mm:ss")}}'
